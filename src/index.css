@@ -118,6 +118,10 @@ body{
     opacity: 0.9;
   }
 
+ .btn:active {
+    opacity: 0.6;
+  }
+
 label{
     color: hsl(278, 68%, 11%);
     margin-bottom: .3rem;
