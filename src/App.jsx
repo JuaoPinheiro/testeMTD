@@ -46,7 +46,10 @@ function App() {
       cardCvc: "",
     },
     validationSchema: Yup.object({
-      cardName: Yup.string().required("Name is required"),
+      cardName: Yup.string()
+      .required("Name is required")
+      .min(5, "Enter at least 5 letters!")
+      .max(20, "Enter up to 20 letters!"),
       cardNumber: Yup.string()
         .required("Card number is required")
         .min(16, "Enter at least 13 numbers!")
